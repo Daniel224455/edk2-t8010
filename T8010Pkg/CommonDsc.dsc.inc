@@ -220,7 +220,7 @@
   GCC:RELEASE_*_*_CC_FLAGS  = -DMDEPKG_NDEBUG
 
 [BuildOptions.AARCH64]
-  GCC:*_*_*_CC_FLAGS = -mstrict-align -march=armv8-a -fno-stack-protector -D DISABLE_NEW_DEPRECATED_INTERFACES
+  GCC:*_*_*_CC_FLAGS = -mstrict-align -march=armv8-a -fno-stack-protector -Wno-error -D DISABLE_NEW_DEPRECATED_INTERFACES
   GCC:*_*_*_DLINK_FLAGS = -z common-page-size=0x1000
 
 [BuildOptions.common.EDKII.DXE_RUNTIME_DRIVER]
