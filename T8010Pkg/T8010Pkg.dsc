@@ -190,12 +190,6 @@
   MdeModulePkg/Universal/PCD/Dxe/Pcd.inf
 
   #
-  # Keypad
-  #
-  T8010Pkg/Drivers/GenericKeypadDeviceDxe/GenericKeypadDeviceDxe.inf
-  T8010Pkg/Drivers/KeypadDxe/KeypadDxe.inf
-
-  #
   # Virtual Keyboard
   #
   EmbeddedPkg/Drivers/VirtualKeyboardDxe/VirtualKeyboardDxe.inf

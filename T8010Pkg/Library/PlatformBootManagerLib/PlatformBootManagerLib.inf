@@ -85,5 +85,4 @@
   gEfiSimpleFileSystemProtocolGuid
   gEsrtManagementProtocolGuid
   gEfiUsb2HcProtocolGuid
-  gT8010PkgKeypadDeviceProtocolGuid
 

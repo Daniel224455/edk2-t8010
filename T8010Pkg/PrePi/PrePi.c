@@ -168,9 +168,6 @@ CEntryPoint (
 {
   UINT64  StartTimeStamp;
 
-  // Write to DECON to allow FrameBuffer writing.
-  MmioWrite32 (0x14830000+0x6b0, 0x2058);
-
   // Initialize the platform specific controllers
   ArmPlatformInitialize (MpId);
   
