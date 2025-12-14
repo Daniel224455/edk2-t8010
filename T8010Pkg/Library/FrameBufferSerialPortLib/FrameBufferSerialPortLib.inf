@@ -1,0 +1,32 @@
+[Defines]
+  INF_VERSION    = 0x00010005
+  BASE_NAME      = FrameBufferSerialPortLib
+  MODULE_TYPE    = BASE
+  VERSION_STRING = 1.0
+  LIBRARY_CLASS  = SerialPortLib
+
+[Sources.common]
+  FrameBufferSerialPortLib.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  ArmPkg/ArmPkg.dec
+  T8010Pkg/T8010Pkg.dec
+
+[LibraryClasses]
+  ArmLib
+  BaseMemoryLib
+  PcdLib
+  IoLib
+  HobLib
+  CompilerIntrinsicsLib
+  CacheMaintenanceLib
+  TimerLib
+  
+[Pcd]
+  gT8010PkgTokenSpaceGuid.PcdMipiFrameBufferAddress
+  gT8010PkgTokenSpaceGuid.PcdMipiFrameBufferWidth
+  gT8010PkgTokenSpaceGuid.PcdMipiFrameBufferHeight
+  gT8010PkgTokenSpaceGuid.PcdMipiFrameBufferPixelBpp
+  gT8010PkgTokenSpaceGuid.PcdMipiFrameBufferVisibleWidth
+  gT8010PkgTokenSpaceGuid.PcdMipiFrameBufferVisibleHeight

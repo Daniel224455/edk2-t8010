@@ -1,4 +1,4 @@
-Attempt to create a minimal EDK2 for Exynos 7580 devices
+Attempt to create a minimal EDK2 for Apple T8010 devices
 
 ## Status
 Boots to UEFI Shell.
@@ -32,7 +32,7 @@ First run ./firstrun.sh
 
 Then, ./build.sh.
 
-Under the folder `workspace`, you will find a boot.tar file. This file can be flashed to your device's BOOT partition.
+Under the folder `workspace`, you will find a UEFI.bin file. Add this file to pongo-uefiboot/payloads/UEFI.bin and rebuild uefi shim.
 
 # Credits
 
